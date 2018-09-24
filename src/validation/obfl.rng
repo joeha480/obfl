@@ -1360,7 +1360,9 @@
     value, value for this marker
   -->
   <define name="attlist-marker" combine="interleave">
-    <attribute name="class"/>
+    <attribute name="class">
+        <data type="NMTOKENS"/>
+    </attribute>
     <attribute name="value"/>
   </define>
   <!-- A leader, move to a specific location within the current row -->
