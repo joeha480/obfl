@@ -81,17 +81,10 @@
     </choice>
   </define>
   <define name="border-width-enum">
-    <choice>
-      <value>1</value>
-      <value>2</value>
-      <value>3</value>
-      <value>4</value>
-      <value>5</value>
-      <value>6</value>
-      <value>7</value>
-      <value>8</value>
-      <value>9</value>
-    </choice>
+    <data type="integer">
+      <param name="minInclusive">1</param>
+      <param name="maxInclusive">9</param>
+    </data>
   </define>
   <define name="border-align-enum">
     <documentation xmlns="http://relaxng.org/ns/compatibility/annotations/1.0">
@@ -377,34 +370,18 @@
     </optional>
     <optional>
       <attribute name="keep-with-previous-sheets">
-        <choice>
-          <value>0</value>
-          <value>1</value>
-          <value>2</value>
-          <value>3</value>
-          <value>4</value>
-          <value>5</value>
-          <value>6</value>
-          <value>7</value>
-          <value>8</value>
-          <value>9</value>
-        </choice>
+        <data type="integer">
+          <param name="minInclusive">0</param>
+          <param name="maxInclusive">9</param>
+        </data>
       </attribute>
     </optional>
     <optional>
       <attribute name="keep-with-next-sheets">
-        <choice>
-          <value>0</value>
-          <value>1</value>
-          <value>2</value>
-          <value>3</value>
-          <value>4</value>
-          <value>5</value>
-          <value>6</value>
-          <value>7</value>
-          <value>8</value>
-          <value>9</value>
-        </choice>
+        <data type="integer">
+          <param name="minInclusive">0</param>
+          <param name="maxInclusive">9</param>
+        </data>
       </attribute>
     </optional>
     <optional>
